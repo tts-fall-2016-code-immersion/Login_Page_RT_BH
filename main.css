@@ -3,6 +3,11 @@
    @import url(https://fonts.googleapis.com/css?family=Noto+Sans|Comfortaa:400,300,700);
 }
 
+* :focus {
+  outline: none;
+}
+
+
 body {
   background-color: #DDD;
   color: #222;
@@ -48,40 +53,84 @@ h1 {
   font-size: 2em;
 }
 
- input {
- border: none;
- border-bottom: 1px #AAA solid;
- display: block;
- margin-bottom: 20px;
- padding: 4px;
- height: 32px;
- width: 220px;
- font-weight: 400;
+input {
+  border: none;
+  border-bottom: 1px #AAA solid;
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  height: 32px;
+  width: 220px;
+  font-weight: 400;
+}
+
+input :focus {
+  border-bottom: 2px solid #16A085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+button {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
 }
 
 .sign-up-button {
-margin-top: 5px;
-margin-bottom: 5px;
-width: 220px;
-height: 32px;
-border: none;
-border-radius: 2px;
-background-color: #16A085;
-color: #FFF;
-text-transform: uppercase;
-font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 32px;
+  background-color: #16A085;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.sign-up-button: hover {
+.sign-up-button:hover {
   opacity: 0.8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
-
 }
 
-.sign-up-button: active {
+.sign-up-button:active {
   opacity: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-
-
 }
+
+.facebook {
+  background-color: #32508E;
+}
+
+.twitter {
+  background-color: #55ACEE;
+}
+
+.google {
+  background-color: #DD4B39;
+}
+
+.loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #FFF;
+  text-align: center;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+
+
